@@ -1,0 +1,151 @@
+.first-screen-action
+    background-color: rgba(#000, .6)
+    position: relative
+    width: 100%
+    min-height: 450px
+    height: 100%
+.new-product-wrapper
+    padding: 45px 80px
+    max-width: 100%
+    .container-items-product
+        display: flex
+        flex-direction: row
+        justify-content: space-between
+        max-width: 100%
+        flex-wrap: wrap
+    .top-line
+        text-align: center
+        margin-bottom: 30px
+        .h2
+            font-size: 32px
+            font-weight: 500
+    .item-block-wrapper
+        width: 293px
+        height: 450px
+        position: relative
+        margin-bottom: 30px
+        a
+            text-decoration: none
+            color: #000
+        .image-item
+            width: 100%
+            height: 80%
+            overflow: hidden
+            margin-bottom: 10px
+            &:hover
+                img
+                    transform: scale(1.05)
+            img
+                width: 100%
+                height: 100%
+                object-fit: cover
+                transition: .3s ease
+        .sticker-new-product
+            position: absolute
+            top: 0
+            left: 0
+            background-color: #38b000
+            padding: 5px 10px
+            border-radius: 0 10px 10px 0
+            color: #fff
+            z-index: 999
+            opacity: 0.9
+            span
+                font-weight: 500
+        .name-wrapper
+            margin-bottom: 22px
+            p
+                font-size: 14px
+        .price-wrapper
+            font-weight: 400
+.sale-product-wrapper
+    padding: 45px 80px
+    max-width: 100%
+    .container-sale-product
+        display: flex
+        flex-direction: row
+        justify-content: space-between
+        max-width: 100%
+        flex-wrap: wrap
+    .top-line
+        text-align: center
+        margin-bottom: 30px
+        .h2
+            font-size: 32px
+            font-weight: 500
+    .item-block-wrapper
+        width: 293px
+        height: 450px
+        position: relative
+        margin-bottom: 30px
+        a
+            text-decoration: none
+            color: #000
+        .image-item
+            width: 100%
+            height: 80%
+            overflow: hidden
+            margin-bottom: 10px
+            &:hover
+                img
+                    transform: scale(1.05)
+            img
+                width: 100%
+                height: 100%
+                object-fit: cover
+                transition: .3s ease
+        .sticker-new-product
+            position: absolute
+            top: 0
+            left: 0
+            background-color: rgba(#eb001c, .9)
+            padding: 5px 10px
+            border-radius: 0 10px 10px 0
+            color: #fff
+            z-index: 999
+            opacity: 0.9
+            span
+                font-weight: 500
+        .name-wrapper
+            margin-bottom: 22px
+            p
+                font-size: 14px
+        .price-wrapper
+            display: flex
+            width: 100%
+            align-items: center
+            p
+                font-weight: 400
+                margin-right: 15px
+            .discount-wrapper
+                color: #eb001c
+                font-size: 18px
+                font-weight: 900
+            .full-wrapper
+                margin-left: 5px
+                font-size: 12px
+                font-weight: 300
+                color: #777
+                text-decoration: line-through
+.link-all-product
+    text-align: center
+    .link-all-new
+        color: #fff
+        text-decoration: none
+        background: #38b000
+        padding: 10px 25px
+        border-radius: 10px
+        cursor: pointer
+        transition: all .3s ease
+        &:hover
+            background: rgba(#38b000, .8)
+    .link-all-sale
+        color: #fff
+        text-decoration: none
+        background: #eb001c
+        padding: 10px 25px
+        border-radius: 10px
+        cursor: pointer
+        transition: all .3s ease
+        &:hover
+            background: rgba(#eb001c, .8)

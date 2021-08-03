@@ -1,0 +1,52 @@
+.site-header
+    background: #000
+    color: #fff
+    display: flex
+    flex-direction: row
+    align-items: center
+    max-width: 100%
+    justify-content: space-between
+    padding: 10px 50px
+    .main-nav
+        position: relative
+        ul
+            list-style-type: none
+            display: flex
+            align-items: center
+            li
+                display: inline-block
+                margin-right: 25px
+                img
+                    width: 32px
+                    height: 32px
+                .link-main
+                    text-decoration: none
+                    color: #fff
+                    position: relative
+                    padding-bottom: 2px
+
+                    &::after
+                        content: ''
+                        position: absolute
+                        width: 0%
+                        opacity: 0
+                        height: 1px
+                        background-color: #fff
+                        bottom: 0
+                        left: 0
+                        transition: .4s ease
+                    &:hover
+                        &::after
+                            width: 100%
+                            opacity: 1
+                .link-main-cart
+                    text-decoration: none
+                    color: #fff
+                    position: relative
+                    .count-wrapper
+                        position: absolute
+                        right: -12px
+                        top: -22px
+                        background-color: #FCA311
+                        padding: 2px 7px
+                        border-radius: 50%

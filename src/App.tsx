@@ -1,26 +1,19 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
-
-function App() {
+import React from "react";
+import { MainCartContext } from "./Components/CartContext/MainCartContext";
+import { Header } from "./Components/Header/Header";
+import "./main.sass";
+import { MainRoutes } from "./routes/MainRouter";
+import { RoutesContext } from "./routes/RoutesContext";
+import { useRoutes } from "./routes/useRoutes";
+export const App: React.FC = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="main-wrapper">
+      <RoutesContext.Provider value={useRoutes}>
+        <MainCartContext>
+          <Header />
+          <MainRoutes />
+        </MainCartContext>
+      </RoutesContext.Provider>
     </div>
   );
-}
-
-export default App;
+};

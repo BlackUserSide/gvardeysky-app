@@ -1,0 +1,110 @@
+.card-page-wrapper
+    max-width: 100%
+    padding: 35px 70px
+    .container-item
+        display: flex
+        max-width: 100%
+        .image-wrapper
+            width: 50%
+            display: flex
+            flex-direction: row
+            justify-content: center
+            align-items: center
+            img
+                width: 80%
+                object-fit: cover
+        .text-composition
+            width: 50%
+            .name-wrapper
+                margin-bottom: 10px
+                .h1
+                    font-size: 34px
+                    font-weight: normal
+            .info-wrapper
+                display: flex
+                margin-bottom: 30px
+                p
+                    margin-right: 17px
+                    color: #777
+                    text-transform: uppercase
+                    font-size: 12px
+            .price-wrapper
+                margin-bottom: 25px
+                p
+                    font-size: 26px
+                    font-weight: 400
+            .price-wrapper-discount
+                margin-bottom: 25px
+                display: flex
+                align-items: center
+                max-width: 150px
+                width: 100%
+                justify-content: space-between
+                .discount-price
+                    color: #eb001c
+                    font-size: 26px
+                    font-weight: 900
+                .full-price
+                    margin-left: 5px
+                    font-size: 18px
+                    font-weight: 300
+                    color: #777
+                    text-decoration: line-through
+            .size-wrapper
+                margin-bottom: 45px
+                p
+                    font-size: 16px
+                    margin-bottom: 10px
+                .block-wrapper
+                    max-width: 350px
+                    width: 100%
+                    display: flex
+                    justify-content: space-between
+                    .size-btn
+                        display: flex
+                        align-items: center
+                        justify-content: center
+                        width: 40px
+                        height: 38px
+                        text-align: center
+                        border: 2px solid #000
+                        border-radius: 50%
+                        cursor: pointer
+                        transition: all .3s ease
+                        text-transform: uppercase
+                        &:hover
+                            background-color: #FCA311
+                            color: #fff
+                            transform: scale(1.1)
+                    .active-size
+                        background: #FCA311
+                        color: #fff
+            .btn-wrapper
+                display: flex
+                max-width: 90%
+                justify-content: space-between
+                .add-to-cart
+                    padding: 10px 25px
+                    border-radius: 10px
+                    background: #FCA311
+                    color: #14213D
+                    text-transform: uppercase
+                    font-weight: 400
+                    cursor: pointer
+                    letter-spacing: 0.15em
+                    transition: all .3s ease
+                    &:hover
+                        background: rgba(#FCA311, .7)
+                        color: rgba(#14213D, .7)
+                .bay-to-click
+                    padding: 10px 25px
+                    border-radius: 10px
+                    background: #14213D
+                    color: #fff
+                    text-transform: uppercase
+                    font-weight: 400
+                    cursor: pointer
+                    letter-spacing: 0.15em
+                    transition: all .3s ease
+                    &:hover
+                        background: rgba(#14213D, .7)
